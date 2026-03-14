@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MZY的个人页面</title>
+    <meta charset="utf-8">
+    <title>我的网页</title>
     <style>
         body {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
+            /* 背景渐变（不想用图片就用这个） */
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            
+            /* 如果要用图片背景，把上面注释，打开下面这行 */
+            // background-image: url("bg.jpg");
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            
             margin: 0;
-            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: white;
         }
-     <style>
+
         h1 {
-            text-align: center;
-            color: blue;
+            font-size: 40px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
-        p {
-            text-align: center;
-            color: black;
+
+        a {
+            color: #ffdd57;
+            font-size: 20px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            color: #fff;
         }
     </style>
 </head>
+
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <p>这是我用 GitHub 搭建的第一个网页。</p>
+    <h1>你好，这是MZY的网页！</h1>
+    <a href="https://space.bilibili.com/3546778620135496?spm_id_from=333.1007.0.0" target="_blank">点我打开 GitHub</a>
 </body>
 </html>
